@@ -1,0 +1,3 @@
+tokenizer: sentence-transformers/all-MiniLM-L6-v2
+embedding_model: sentence-transformers/all-MiniLM-L6-v2
+llm_model: gpt-3.5-turbo

@@ -1,6 +1,6 @@
 import fitz  # PyMuPDF
 import docx
-from io import StringIO
+
 
 def read_pdf(file):
     doc = fitz.open(stream=file.read(), filetype="pdf")

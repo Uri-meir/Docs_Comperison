@@ -21,6 +21,5 @@ def compare_documents(embeddings1, embeddings2, sentences1, sentences2, threshol
         if max_sim >= threshold:
             similar_sentences.append((sentences1[i], sentences2[sim_row.argmax()]))
         else:
-            different_sentences.append(sentences1[i])
-
+            different_sentences.append((sentences1[i], sentences2[sim_row.argmax()]))
     return similar_sentences, different_sentences
